@@ -2,5 +2,7 @@
 
 @main("Task list") {
     <h2>Task list</h2>
-    <h2>@tasks</h2>
+    <ul>@for(task <- tasks) {
+        <li>@task</li>
+    }</ul>
 }

@@ -8,6 +8,7 @@ import play.api.mvc._
 @Singleton
 class Task @Inject()(val controllerComponents: ControllerComponents) extends BaseController {
   def taskList = Action {
-    Ok(views.html.TaskList(Seq("Nil","Pedro","Legal")))
+    val tasks = List("Sleep","Studie","Code","Work")
+    Ok(views.html.taskList(tasks))
   }
 }
