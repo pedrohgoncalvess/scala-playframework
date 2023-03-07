@@ -7,6 +7,20 @@ GET /sum/:first/:second controllers.HomeController.printSum(first: Long, second:
 GET /tasklist controllers.Task.taskList
 
 
+GET /login                          controllers.Task.login
+
+GET /validate                       controllers.Task.validateLogin(username:String,password:String)
+
+#http://localhost:9000/productArgs?prodType=abc&prodNum=123 PASS THE ARGUMENTS IN ROUTE LIKE A QUERY
+GET /productArgs                    controllers.Task.product(prodType: String,prodNum: Int )
+
+#localhost:9000/product/abc/123 JUST PASS THE ROUTE
+GET /product/:prodType/:prodNum     controllers.Task.product(prodType: String,prodNum: Int )
+
+#http://localhost:9000/productRE/ab12/123 REGULAR EXPRESSION IN ROUTE
+GET /productRE/$prodType<[a-z]{2}\d\d>/:prodNum      controllers.Task.product(prodType: String,prodNum: Int )
+
+
 #this document contains web application routes, for add new route write the method [GET, PUT, POST, DELETE],
 #after this the route and finally the action to perform
 # EXAMPLE  GET /FAZER  DIRETORIO.CLASSE.METODO

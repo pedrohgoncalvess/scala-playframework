@@ -11,4 +11,16 @@ class Task @Inject()(val controllerComponents: ControllerComponents) extends Bas
     val tasks = List("Sleep","Studie","Code","Work")
     Ok(views.html.taskList(tasks))
   }
+
+  def login = Action {
+    Ok(views.html.login())
+  }
+
+  def validateLogin(username:String, password:String) = Action {
+    Ok(s"Your login is username: $username | password: $password")
+  }
+
+  def product(prodType:String, prodNum:Int) = Action {
+    Ok(s"Product: $prodType, product num: $prodNum")
+  }
 }
