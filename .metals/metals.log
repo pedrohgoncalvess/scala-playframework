@@ -1,0 +1,14 @@
+2023.03.06 16:29:53 INFO  Started: Metals version 0.11.11 in workspace 'C:\Users\Pedro\Desktop\WorkSpace\Python\Scala\restscala' for client Visual Studio Code 1.76.0.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/Pedro/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.03.06 16:29:54 INFO  time: initialize in 0.61s
+2023.03.06 16:29:55 WARN  Build server is not auto-connectable.
+2023.03.06 16:29:55 WARN  no build target for: C:\Users\Pedro\Desktop\WorkSpace\Python\Scala\restscala\build.sbt
+2023.03.06 16:30:00 INFO  no build target found for C:\Users\Pedro\Desktop\WorkSpace\Python\Scala\restscala\build.sbt. Using presentation compiler with project's scala-library version: 3.2.2
+2023.03.06 16:30:03 INFO  time: code lens generation in 7.5s
+2023.03.06 16:30:18 WARN  no build target for: C:\Users\Pedro\Desktop\WorkSpace\Python\Scala\restscala\project\plugins.sbt
+2023.03.06 16:36:01 WARN  no build target for: C:\Users\Pedro\Desktop\WorkSpace\Python\Scala\restscala\app\controllers\HomeController.scala
