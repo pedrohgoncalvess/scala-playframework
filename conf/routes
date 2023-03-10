@@ -4,12 +4,16 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 GET /sum/:first/:second controllers.HomeController.printSum(first: Long, second: Long)
 
-GET /tasklist controllers.Task.taskList
+GET /tasklist                       controllers.Task.taskList
 
 
 GET /login                          controllers.Task.login
 
-GET /validate                       controllers.Task.validateLogin(username:String,password:String)
+GET /validateGet                    controllers.Task.validateLoginGet(username:String,password:String)
+
++nocsrf
+POST /validatePost                  controllers.Task.valideLoginPost
+
 
 #http://localhost:9000/productArgs?prodType=abc&prodNum=123 PASS THE ARGUMENTS IN ROUTE LIKE A QUERY
 GET /productArgs                    controllers.Task.product(prodType: String,prodNum: Int )
@@ -23,4 +27,4 @@ GET /productRE/$prodType<[a-z]{2}\d\d>/:prodNum      controllers.Task.product(pr
 
 #this document contains web application routes, for add new route write the method [GET, PUT, POST, DELETE],
 #after this the route and finally the action to perform
-# EXAMPLE  GET /FAZER  DIRETORIO.CLASSE.METODO
+# EXAMPLE  GET /ROUTE  DIRETORIO.CLASSE.METODO
