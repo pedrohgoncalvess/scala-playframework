@@ -13,7 +13,8 @@ GET /validateGet                    controllers.Task.validateLoginGet(username:S
 
 +nocsrf
 POST /validatePost                  controllers.Task.valideLoginPost
-
++nocsrf
+POST /createUser                    controllers.Task.createUser
 
 #http://localhost:9000/productArgs?prodType=abc&prodNum=123 PASS THE ARGUMENTS IN ROUTE LIKE A QUERY
 GET /productArgs                    controllers.Task.product(prodType: String,prodNum: Int )

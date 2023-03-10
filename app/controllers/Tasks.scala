@@ -9,7 +9,8 @@ import models.taskUsers
 @Singleton
 class Task @Inject()(val controllerComponents: ControllerComponents) extends BaseController {
   def taskList = Action {
-    val tasks = List("Sleep","Studie","Code","Work")
+    val username = "Pedro"
+    val tasks = taskUsers.getTasks(username)
     Ok(views.html.taskList(tasks))
   }
 
@@ -32,6 +33,10 @@ class Task @Inject()(val controllerComponents: ControllerComponents) extends Bas
         Redirect(routes.Task.login)
       }
     }.getOrElse(Redirect(routes.Task.login))
+  }
+
+  def createUser = {
+    TODO
   }
 
   def product(prodType:String, prodNum:Int) = Action {
